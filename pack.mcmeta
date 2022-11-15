@@ -1,6 +1,8 @@
 {
 	"pack": {
 		"pack_format": 10,
-		"description": "Datapack to grant a daily KojiroKoin"
+		"description": "Datapack to grant a daily KojiroKoin",
+		"version": "1.0.1",
+		"change_log": "Execute commands simplified"
 	}
 }
