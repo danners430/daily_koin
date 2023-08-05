@@ -12,4 +12,7 @@ scoreboard objectives add numberToGive dummy
 # execute as @e[tag=dayCounter] unless score @s dayCount matches 0.. run scoreboard players set @s dayCount 1
 
 # Schedule marker summon function - fix for markers loading AFTER this function runs on server restart
-schedule function dailykoin:summon_marker 30s
+# schedule function dailykoin:summon_marker 30s
+
+# If the data storage doesn't exist yet, create it.
+execute unless data storage dailykoin:count day run data modify storage dailykoin:count day set value 1

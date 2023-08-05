@@ -1,8 +1,8 @@
 {
-	"pack": {
-		"pack_format": 15,
-		"description": "Datapack to grant a daily KojiroKoin",
-		"version": "1.2.0",
-		"change_log": "Updated for Herocraft S3 by adding in the existing command blocks"
-	}
+    "pack": {
+        "pack_format": 15,
+        "description": "Datapack to grant a daily KojiroKoin",
+        "version": "1.2.0",
+        "change_log": "Updated for Herocraft S3 by adding in the existing command blocks"
+    }
 }

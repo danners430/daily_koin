@@ -1,24 +1,26 @@
 {
     "criteria": {
-      "hit_mob": {
-        "trigger": "minecraft:player_hurt_entity",
-        "conditions": {
-          "damage": {
-            "type": {
-              "source_entity": {
-                "equipment": {
-                  "mainhand": {
-                    "items": ["minecraft:wooden_shovel"],
-                    "nbt": "{Unbreakable:1,display:{Name:'[{\"text\":\"The Spoon of Justice\",\"italic\":false,\"color\":\"blue\"}]',Lore:['[{\"text\":\"Instakills any non-boss mob\",\"italic\":false}]']},Enchantments:[{}]} "
-                  }
+        "hit_mob": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "source_entity": {
+                            "equipment": {
+                                "mainhand": {
+                                    "items": [
+                                        "minecraft:wooden_shovel"
+                                    ],
+                                    "nbt": "{Unbreakable:1,display:{Name:'[{\"text\":\"The Spoon of Justice\",\"italic\":false,\"color\":\"blue\"}]',Lore:['[{\"text\":\"Instakills any non-boss mob\",\"italic\":false}]']},Enchantments:[{}]} "
+                                }
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
         }
-      }
     },
     "rewards": {
-      "function": "dailykoin:instakill"
+        "function": "dailykoin:instakill"
     }
-  }
+}
