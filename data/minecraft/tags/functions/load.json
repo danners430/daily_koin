@@ -1,6 +1,6 @@
 {
-  "replace": false,
-  "values": [
-	"dailykoin:load"
-  ]
+    "replace": false,
+    "values": [
+        "dailykoin:load"
+    ]
 }

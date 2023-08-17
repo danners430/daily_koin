@@ -1,6 +1,6 @@
 {
-  "replace": false,
-  "values": [
-	"dailykoin:tick"
-  ]
+    "replace": false,
+    "values": [
+        "dailykoin:tick"
+    ]
 }

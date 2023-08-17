@@ -1,5 +1,12 @@
+# Make sure there's no day counters in the world
+kill @e[type=marker,tag=dayCounter]
+
+# Summon marker and get the current day tag
+summon minecraft:marker ~ ~ ~ {Tags:["dayCounter"]}
+execute store result score @e[type=marker,tag=dayCounter] dayCount run data get storage dailykoin:count day
+
 # Find the difference between the server day count and the player day count
-scoreboard players operation @s dayCount -= @e[tag=dayCounter,limit=1] dayCount
+scoreboard players operation @s dayCount -= @e[type=marker,tag=dayCounter,limit=1] dayCount
 
 # If the difference is 1, that means they logged in the previous day. As such, increase their streak. Don't increase if they missed a day.
 execute as @s[scores={dayCount=-1}] run scoreboard players add @s dailyCumulative 1
@@ -24,3 +31,6 @@ scoreboard players set @s dailyKoin 1
 
 # Message in chat
 tellraw @s ["",{"text":"Welcome back to ","color":"blue"},{"text":"Herocraft","color":"gold"},{"text":"!\nYou've been given ","color":"blue"},{"text":"+","color":"gold"},{"score":{"name": "@s","objective": "dailyCumulative"},"color": "gold"},{"text":" daily ","color":"gold"},{"text":"Kojiro Koins","color":"light_purple"},{"text":"! Log in tomorrow for more!","color":"blue"}]
+
+# Get rid of score counter
+kill @e[type=marker,tag=dayCounter]
