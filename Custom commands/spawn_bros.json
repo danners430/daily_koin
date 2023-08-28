@@ -1,0 +1,58 @@
+{
+    "schemaVersion": 1,
+    "commandMode": "COMMAND_CUSTOM",
+    "command": "bros",
+    "permission": 2,
+    "children": [
+        {
+            "child":"Frank",
+            "type":"literal",
+            "actions": [
+                {
+                    "command":"execute positioned 4325 66 -1249 run function dailykoin:summon_frank",
+                    "commandType":"SERVER"
+                }
+            ]
+        },
+        {
+            "child":"Aeric",
+            "type":"literal",
+            "actions":[
+                {
+                    "command":"execute positioned 4318 67 -1279 run function dailykoin:summon_aeric",
+                    "commandType":"SERVER"
+                }
+            ]
+        },
+        {
+            "child":"Balthidas",
+            "type":"literal",
+            "actions":[
+                {
+                    "command":"execute positioned 4332 66 -1220 run function dailykoin:summon_balthidas",
+                    "commandType":"SERVER"
+                }
+            ]
+        },
+        {
+            "child":"Heihorn",
+            "type":"literal",
+            "actions":[
+                {
+                    "command":"execute positioned 4302 72 -1252 run function dailykoin:summon_heihorn",
+                    "commandType":"SERVER"
+                }
+            ]
+        },
+        {
+            "child":"Virxalim",
+            "type":"literal",
+            "actions":[
+                {
+                    "command":"execute positioned 4335 67 -1276 run function dailykoin:summon_virxalim",
+                    "commandType":"SERVER"
+                }
+            ]
+        }
+    ]
+}
