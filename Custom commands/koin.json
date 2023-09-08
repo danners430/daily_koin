@@ -1,0 +1,36 @@
+{
+    "schemaVersion": 1,
+    "commandMode": "COMMAND_CUSTOM",
+    "command": "koin",
+    "permission": 2,
+    "children": [
+        {
+            "child": "user",
+            "type": "argument",
+            "argumentType": "minecraft:player",
+            "children":
+            [
+                {
+                    "child":"count",
+                    "type":"argument",
+                    "argumentType":"brigadier:integer",
+                    "actions":[
+                        {
+                            "command": "give {{user}} emerald{display:{Name:'[{\"text\":\"Kojiro Koin\",\"italic\":false}]',Lore:['[{\"text\":\"Redeemable at Frank\\\\'s\",\"italic\":false}]','[{\"text\":\"store for OP items\",\"italic\":false}]']},Enchantments:[{}]} {{count}}",
+                            "commandType": "CLIENT"
+                        }
+                    ]
+                }
+            ],
+            "actions":[
+                {
+                    "command": "give {{user}} emerald{display:{Name:'[{\"text\":\"Kojiro Koin\",\"italic\":false}]',Lore:['[{\"text\":\"Redeemable at Frank\\\\'s\",\"italic\":false}]','[{\"text\":\"store for OP items\",\"italic\":false}]']},Enchantments:[{}]} 1",
+                    "commandType": "CLIENT"
+                }
+
+            ]
+        }
+
+    ]
+
+}
