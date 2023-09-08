@@ -1,0 +1,23 @@
+{
+    "schemaVersion": 1,
+    "commandMode": "COMMAND_CUSTOM",
+    "command": "ft",
+    "permission": 4,
+    "children": [
+        {
+            "child": "text",
+            "type": "argument",
+            "argumentType": "minecraft:greedy_string",
+            "actions": [
+                {
+                    "command": "/tellraw @a [\"\",\"<\",{\"text\":\"Frank\",\"color\":\"blue\"},\"> {{text}} \"]",
+                    "commandType": "SERVER"
+                },
+                {
+                    "command": "execute at @e[type=minecraft:villager,tag=Frank] run playsound minecraft:entity.villager.ambient master @a ~ ~ ~ 100",
+                    "commandType":"SERVER"
+                }
+            ]
+        }
+    ]
+}
