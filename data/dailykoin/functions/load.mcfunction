@@ -16,3 +16,6 @@ scoreboard objectives add numberToGive dummy
 
 # If the data storage doesn't exist yet, create it.
 execute unless data storage dailykoin:count day run data modify storage dailykoin:count day set value 1
+
+# reset compensation
+scoreboard objectives add dailyKoinCompensation dummy

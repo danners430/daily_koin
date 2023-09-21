@@ -33,3 +33,6 @@ execute as @a[nbt={Inventory:[{Slot:103b,tag:{customTag:mining}}]}] run effect g
 
 # Speed shoes
 execute as @a[nbt={Inventory:[{Slot:100b,id:"minecraft:leather_boots",tag:{customTag:"speedy"}}]}] run effect give @s minecraft:speed 1 5 true
+
+# Give players compensation
+execute as @a unless score @s dailyKoinCompensation matches 0.. run function dailykoin:compensation
