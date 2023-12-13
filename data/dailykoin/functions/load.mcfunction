@@ -4,6 +4,8 @@ scoreboard objectives add dailyCumulative dummy
 scoreboard objectives add dayCount dummy
 # Loop counter
 scoreboard objectives add numberToGive dummy
+# RNG scoreboard
+scoreboard objectives add RNG dummy
 
 # If marker entity does not exist, summon it
 # execute unless entity @e[tag=dayCounter] run summon minecraft:marker ~ ~ ~ {Tags:[dayCounter]}
