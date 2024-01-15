@@ -5,13 +5,8 @@
 			"rolls": 0,
 			"entries": [
 				{
-					"type": "minecraft:empty",
-					"weight": 2
-				},
-				{
 					"type": "minecraft:item",
-					"weight": 1,
-					"name": "minecraft:paper",
+					"name": "minecraft:recovery_compass",
 					"functions": [
 						{
 							"function": "minecraft:set_nbt",
@@ -37,6 +32,12 @@
 									"text": "Frank's Maze once"
 								}
 							]
+						}
+					],
+					"conditions": [
+						{
+							"condition": "minecraft:random_chance",
+							"chance": 0.2
 						}
 					]
 				}
