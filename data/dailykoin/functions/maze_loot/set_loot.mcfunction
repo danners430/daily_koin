@@ -1,1 +1,1 @@
-data modify block ~ ~ ~ LootTable set value "dailykoin:frank_maze"
+data modify block ~ ~ ~ LootTable set value "dailykoin:frank_maze_nopass"
