@@ -38,3 +38,5 @@ execute if score @e[type=minecraft:marker,tag=loot_rng,limit=1] RNG matches 1 po
 # 4374 67 -1245
 function dailykoin:maze_loot/rng
 execute if score @e[type=minecraft:marker,tag=loot_rng,limit=1] RNG matches 1 positioned 4374 67 -1245 run function dailykoin:maze_loot/set_loot
+
+kill @e[type=marker,tag=loot_rng]
